@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  #main {
+    height: 100%;
+    width: 100%;
+  }
+  #main .card {
+    height: 60%;
+    width: 25%;
+    background: linear-gradient(45deg, #32c5ed, #55d7ac);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 9px;
+  }
+  .card .searchandbtn {
+    width: 100%;
+    height: 20%;
+    /* background-color: blanchedalmond; */
+    box-sizing: border-box;
+    padding: 40px 50px;
+  }
+  .searchandbtn input {
+    font-size: 1.1vw;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 9px;
+  }
+  .searchandbtn button {
+    font-size: 1.1vw;
+    padding: 10px 7px;
+    border: none;
+    border-radius: 9px;
+  }
+  img {
+    width: 60%;
+    position: absolute;
+    top: 35%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+  .weather {
+    position: absolute;
+    bottom: 9%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .weather h1 {
+    font-size: 7vw;
+    position: relative;
+    left: 1.8vw;
+  }
+  .weather h2 {
+    font-size: 1.9vw;
+    position: absolute;
+    left: 1.5vw;
+  }
+  
+  @media (max-width: 500px) {
+    #main .card {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .card .searchandbtn {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+    }
+    .searchandbtn input {
+      font-size: 6vw;
+      margin: 0 auto;
+    }
+    .searchandbtn button {
+      font-size: 3vh;
+      width: 75vw;
+      margin-left: 1vw;
+    }
+    .card .weather {
+      width: 100%;
+      height: 30%;
+  
+      position: absolute;
+      bottom: 1%;
+      left: 50%;
+    }
+    .weather h1 {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18vw;
+    }
+    .weather h2 {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 15vw;
+    }
+    .card img{
+      top: 40%;
+      left: 50%;
+    }
+  }
